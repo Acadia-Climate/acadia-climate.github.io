@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1,
+p {
+  text-shadow: 0px 2px 4px black;
+}
