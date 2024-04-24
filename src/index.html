@@ -1,47 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-
-<body>
-  <div class="navbar bg-base-100">
-    <div class="flex-1">
-      <a class="btn btn-ghost text-xl">Acadia Climate</a>
-    </div>
-    <div class="flex-none">
-      <ul class="menu menu-horizontal px-1">
-        <li><a>Link</a></li>
-        <li>
-          <details>
-            <summary>
-              Parent
-            </summary>
-            <ul class="p-2 bg-base-100 rounded-t-none">
-              <li><a>Link 1</a></li>
-              <li><a>Link 2</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="hero min-h-screen"
-    style="background-image: url(../res/forest.png);">
-    <div class="hero-overlay bg-opacity-40"></div>
-    <div class="hero-content text-center text-neutral-content">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">Investing in a greener future</h1>
-        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi.
-          In deleniti eaque aut repudiandae et a id nisi.</p>
-        <button class="btn btn-primary">Get Started</button>
+  <body>
+    <div class="flex flex-col min-h-screen">
+      <!-- Navbar start-->
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl" href="./index.html">
+            Acadia Climate
+          </a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="mailto:juan@acadiaclimate.com">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-</body>
+      <!-- Navbar end-->
 
+      <!-- Hero container start -->
+      <div
+        class="hero flex-1 min-h-min"
+        style="background-image: url(../res/forest.png)"
+      >
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <!-- Hero inner content start -->
+          <div class="max-w-md page-text">
+            <h1 class="mb-5 text-6xl font-bold">
+              Investing in a greener future
+            </h1>
+            <p class="mb-5 text-xl">
+              We enable carbon removal project developers to unlock liquidity so
+              that they can focus less on cash-flow issues and more on what they
+              do best: making the planet a better place for all of us
+            </p>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
+          <!-- Hero inner content end -->
+        </div>
+      </div>
+      <!-- Hero container end -->
+    </div>
+  </body>
 </html>
