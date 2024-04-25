@@ -3,47 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="css/output.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div class="flex flex-col min-h-screen">
-      <!-- Navbar start-->
-      <div class="navbar bg-base-100">
-        <div class="flex-1">
-          <a class="btn btn-ghost text-xl" href="./index.html">
-            Acadia Climate
-          </a>
-        </div>
-        <div class="flex-none">
-          <ul class="menu menu-horizontal px-1">
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="mailto:juan@acadiaclimate.com">Contact</a></li>
-          </ul>
-        </div>
+    <!-- Navbar start-->
+    <div class="navbar bg-base-100 fixed top-0 left-0 z-50">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl" href="/"> Acadia Climate </a>
       </div>
-      <!-- Navbar end-->
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="mailto:juan@acadiaclimate.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navbar end-->
 
-      <!-- Hero container start -->
-      <div
-        class="hero flex-1 min-h-min"
-        style="background-image: url(../res/forest.png)"
-      >
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content">
-          <!-- Hero inner content start -->
-          <div class="flex flex-row flex-wrap gap-4">
+    <!-- Hero container start -->
+    <div
+      class="hero min-h-screen"
+      style="background-image: url(img/forest.png)"
+    >
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content mt-20">
+        <!-- Hero inner content start -->
+        <div class="grid gap-4 place-items-center">
+          <h1 class="text-5xl text-neutral-content font-bold page-text">
+            The Team
+          </h1>
+          <div class="flex flex-row flex-wrap gap-4 place-content-center">
             <!-- Profile card start -->
-            <h1
-              class="mb-5 text-5xl text-neutral-content font-bold page-text"
-              style="width: 100%"
-            >
-              The Team
-            </h1>
-
             <div class="card card-compact w-96 glass text-neutral-content">
               <figure>
-                <img src="../res/juan_headshot.jpg" alt="Juan Llano" />
+                <img src="img/juan_headshot.jpg" alt="Juan Llano" />
               </figure>
               <div class="flex flex-row">
                 <div class="card-body flex-1 gap-0">
@@ -52,7 +46,7 @@
                 </div>
                 <a
                   style="
-                    background-image: url(../res/In-Blue-128.png);
+                    background-image: url(img/In-Blue-128.png);
                     width: 32px;
                     height: 32px;
                     background-size: contain;
@@ -67,10 +61,7 @@
             <!-- Profile card start -->
             <div class="card card-compact w-96 glass text-neutral-content">
               <figure>
-                <img
-                  src="../res/ricardo_headshot.jpg"
-                  alt="Ricardo Piedrahita"
-                />
+                <img src="img/ricardo_headshot.jpg" alt="Ricardo Piedrahita" />
               </figure>
               <div class="flex flex-row">
                 <div class="card-body flex-1 gap-0">
@@ -79,7 +70,7 @@
                 </div>
                 <a
                   style="
-                    background-image: url(../res/In-Blue-128.png);
+                    background-image: url(img/In-Blue-128.png);
                     width: 32px;
                     height: 32px;
                     background-size: contain;
@@ -94,7 +85,7 @@
             <!-- Profile card start -->
             <div class="card card-compact w-96 glass text-neutral-content">
               <figure>
-                <img src="../res/jared_headshot.jpg" alt="Jared Holzman" />
+                <img src="img/jared_headshot.jpg" alt="Jared Holzman" />
               </figure>
               <div class="flex flex-row">
                 <div class="card-body flex-1 gap-0">
@@ -103,7 +94,7 @@
                 </div>
                 <a
                   style="
-                    background-image: url(../res/In-Blue-128.png);
+                    background-image: url(img/In-Blue-128.png);
                     width: 32px;
                     height: 32px;
                     background-size: contain;
@@ -116,10 +107,10 @@
             </div>
             <!-- Profile card end -->
           </div>
-          <!-- Hero inner content end -->
         </div>
+        <!-- Hero inner content end -->
       </div>
-      <!-- Hero container end -->
     </div>
+    <!-- Hero container end -->
   </body>
 </html>
