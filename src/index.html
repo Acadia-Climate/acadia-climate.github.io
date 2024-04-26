@@ -7,44 +7,80 @@
   </head>
 
   <body>
-    <div class="flex flex-col min-h-screen">
-      <!-- Navbar start-->
-      <div class="navbar bg-base-100 fixed top-0 left-0 z-50">
-        <div class="flex-1">
-          <a class="btn btn-ghost text-xl" href="/"> Acadia Climate </a>
-        </div>
-        <div class="flex-none">
-          <ul class="menu menu-horizontal px-1">
-            <li><a href="/about.html">About Us</a></li>
-            <li><a href="mailto:juan@acadiaclimate.com">Contact</a></li>
-          </ul>
-        </div>
+    <!-- <div class="flex flex-col min-h-screen"> -->
+    <!-- Navbar start-->
+    <div class="navbar fixed w-full top-0 z-50 bg-base-100">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl" href="/"> Acadia Climate </a>
       </div>
-      <!-- Navbar end-->
-
-      <!-- Hero container start -->
-      <div
-        class="hero flex-1 min-h-min"
-        style="background-image: url(img/forest.png)"
-      >
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
-          <!-- Hero inner content start -->
-          <div class="max-w-md page-text">
-            <h1 class="mb-5 text-6xl font-bold">
-              Investing in a greener future
-            </h1>
-            <p class="mb-5 text-xl">
-              We enable carbon removal project developers to unlock liquidity so
-              that they can focus less on cash-flow issues and more on what they
-              do best: making the planet a better place for all of us
-            </p>
-            <button class="btn btn-primary">Learn more</button>
-          </div>
-          <!-- Hero inner content end -->
-        </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="mailto:juan@acadiaclimate.com">Contact</a></li>
+        </ul>
       </div>
-      <!-- Hero container end -->
     </div>
+    <!-- Navbar end-->
+
+    <!-- Hero container start -->
+    <div
+      class="grid h-screen place-items-center bg-[#92b1d0] bg-cover bg-fixed bg-blend-multiply"
+      style="background-image: url(img/forest.png)"
+    >
+      <!-- Section 1: START -->
+      <!-- <div
+        class="row-start-1 row-span-10 col-span-full bg-cover bg-fixed"
+        style="background-image: url(img/forest.png)"
+      ></div> -->
+
+      <div
+        class="max-w-lg rounded-md text-center text-neutral-content shadow-2xl p-4 bg-slate-800"
+      >
+        <div class="page-text">
+          <h1 class="mb-5 text-6xl font-bold">Investing in a greener future</h1>
+          <p class="mb-5 text-xl">
+            We enable carbon removal project developers to unlock liquidity so
+            that they can focus less on cash-flow issues and more on what they
+            do best: making the planet a better place for all of us
+          </p>
+          <button class="btn btn-primary">Learn more</button>
+        </div>
+      </div>
+    </div>
+    <!-- Section 1: END -->
+    <!-- Section Divider: START -->
+    <div class="h-60 bg-white">
+      <p class="text-xl">Placeholder!</p>
+    </div>
+    <!-- Section Divider: END -->
+
+    <!-- Section 2: START -->
+    <div
+      class="grid h-screen place-items-center bg-cover bg-fixed bg-slate-800"
+      style="background-image: url(img/forest_hills.jpg)"
+    >
+      <!-- <div
+        class="row-start-10 row-span-10 col-span-full bg-cover text-neutral-content bg-fixed"
+        style="background-image: url(img/forest_hills.jpg)"
+      ></div> -->
+      <div
+        class="row-span-3 col-span-full rounded-md shadow-2xl p-4 text-center bg-slate-50"
+      >
+        <div class="">
+          <h1 class="mb-5 text-2xl font-bold">Enter: Liquid Carbon</h1>
+          <h1 class="mb-5 text-6xl font-bold">Carbon Credit backed loans</h1>
+          <p class="mb-5 text-xl">
+            Developers shouldn't have to wait months to unlock the value of
+            their carbon credit portfolios. With Liquid Carbon, by Acadia
+            Climate, they don't have to. Developers can apply for loans backed
+            by the value of their carbon credits and receive a quote within days
+            instead of months.
+          </p>
+        </div>
+      </div>
+      <!-- Section 2: END -->
+    </div>
+    <!-- Hero container end -->
+    <!-- </div> -->
   </body>
 </html>

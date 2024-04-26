@@ -5,3 +5,15 @@
 .page-text {
   text-shadow: 0px 2px 4px black;
 }
+
+.testy {
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  height: 100vh;
+  box-sizing: border-box;
+}

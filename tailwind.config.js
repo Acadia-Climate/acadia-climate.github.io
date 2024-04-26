@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+
+      }
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
@@ -13,7 +17,7 @@ module.exports = {
           "secondary": "#505000",
           "accent": "#007300",
           "neutral": "#1d170e",
-          "base-100": "#fdfff9",
+          "base-100": "#92b1d0",
           "info": "#00d4ec",
           "success": "#00ad85",
           "warning": "#cb0000",

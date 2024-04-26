@@ -510,9 +510,9 @@ html {
 
 :root {
   --p: 66.6836% 0.18469 249.157311;
-  --b2: 92.7063% 0.007568 121.624194;
-  --b3: 85.7284% 0.006998 121.624194;
-  --bc: 19.9368% 0.001627 121.624194;
+  --b2: 69.5684% 0.0524 248.584796;
+  --b3: 64.3321% 0.048456 248.584796;
+  --bc: 14.9609% 0.011269 248.584796;
   --pc: 13.3367% 0.036938 249.157311;
   --sc: 88.3495% 0.018201 109.769232;
   --ac: 89.6266% 0.032757 142.495339;
@@ -533,7 +533,7 @@ html {
   --s: 41.7473% 0.091003 109.769232;
   --a: 48.133% 0.163784 142.495339;
   --n: 20.8929% 0.019198 77.49001;
-  --b1: 99.6842% 0.008137 121.624194;
+  --b1: 74.8047% 0.056344 248.584796;
   --in: 79.65% 0.137388 209.18028;
   --su: 66.438% 0.133261 168.820193;
   --wa: 52.8813% 0.217 29.233885;
@@ -899,6 +899,34 @@ html {
     :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(.active, .btn):hover {
       background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
     }
+  }
+}
+
+.footer {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: row;
+  place-items: start;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.footer > * {
+  display: grid;
+  place-items: start;
+  gap: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+  .footer {
+    grid-auto-flow: column;
+  }
+
+  .footer-center {
+    grid-auto-flow: row dense;
   }
 }
 
@@ -1450,16 +1478,48 @@ html {
   z-index: 50;
 }
 
-.z-0 {
-  z-index: 0;
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.row-span-10 {
+  grid-row: span 10 / span 10;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-start-10 {
+  grid-row-start: 10;
+}
+
+.row-start-3 {
+  grid-row-start: 3;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .mt-20 {
@@ -1474,9 +1534,20 @@ html {
   display: grid;
 }
 
-.min-h-min {
-  min-height: -moz-min-content;
-  min-height: min-content;
+.h-screen {
+  height: 100vh;
+}
+
+.h-svh {
+  height: 100svh;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-60 {
+  height: 15rem;
 }
 
 .min-h-screen {
@@ -1487,8 +1558,16 @@ html {
   width: 24rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .flex-1 {
@@ -1497,10 +1576,6 @@ html {
 
 .flex-none {
   flex: none;
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1531,13 +1606,49 @@ html {
   gap: 1rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.bg-\[\#92b1d0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 177 208 / var(--tw-bg-opacity));
+}
+
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
 }
 
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-1 {
@@ -1564,6 +1675,11 @@ html {
   line-height: 1.75rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1573,6 +1689,28 @@ html {
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
 }
 
+.bg-blend-multiply {
+  background-blend-mode: multiply;
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .page-text {
   text-shadow: 0px 2px 4px black;
+}
+
+.testy {
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  height: 100vh;
+  box-sizing: border-box;
 }
