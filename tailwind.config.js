@@ -13,18 +13,21 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": "#265eff",
-          "secondary": "#00c5fb",
-          "accent": "#175bea",
-          "neutral": "#1d170e",
-          "base-100": "#ffffff",
-          "info": "#00d4ec",
-          "success": "#00ad85",
-          "warning": "#cb0000",
-          "error": "#ca003e",
+          "primary": "#B8CEFD",
+          "secondary": "#2E4892",
+          "accent": "#265EFF",
+          "neutral": "#ffffff",
+          "base-100": "#f3f4f6",
+          "info": "#19bcff",
+          "success": "#00ca00",
+          "warning": "#ff9e00",
+          "error": "#ff2b77",
         },
       }
     ],
   },
 }
 
+// Blueish-white text color: #dee1f9
+// Darker blue bg: #2E4892
+// Lighter blue bg: #d1e2ff
