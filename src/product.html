@@ -6,24 +6,35 @@
     <link href="css/output.css" rel="stylesheet" />
   </head>
 
-  <!-- <div class="text-lg font-black">Carbon Credits are issued</div>
-                Carbon credits for a project are issued via a registry (e.g.
-                Climate Action Reserve, Verra, etc.) -->
-
   <body>
+    <!-- Navbar start-->
+    <div class="navbar sticky w-full top-0 z-50 bg-base-200">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl" href="/"> Acadia Climate </a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="/product.html">Product</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="mailto:juan@acadiaclimate.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navbar end-->
     <!-- Grid container: START -->
-    <div
+    <!-- <div
       class="grid h-screen place-items-center bg-cover bg-fixed bg-slate-800"
       style="background-image: url(img/forest_hills.jpg)"
-    >
-      <!-- Row 1: START -->
-      <div class="flex rounded-md shadow-2xl p-4 text-center bg-slate-50">
+    > -->
+    <!-- Row 1: START -->
+    <section class="w-full bg-primary-content">
+      <div class="container mx-auto flex flex-row flex-wrap p-4 text-center">
         <!-- Prod Desc: START -->
-        <div class="">
+        <div class="lg:w-1/2 text-left">
           <h1 class="mb-5 text-2xl font-bold">Enter: Liquid Carbon</h1>
-          <h1 class="mb-5 text-6xl font-bold">Carbon Credit backed loans</h1>
+          <h1 class="mb-7 text-6xl font-bold">Carbon Credit backed loans</h1>
           <p class="mb-5 text-xl">
-            If you're a carbon projeect developer, you shouldn't have to wait
+            If you're a carbon project developer, you shouldn't have to wait
             months to unlock the value of their carbon credit portfolios. With
             Liquid Carbon, by Acadia Climate, they don't have to. Developers can
             apply for loans backed by the value of their carbon credits and
@@ -33,7 +44,7 @@
         <!-- Prod Desc: END -->
         <!-- Timeline: START -->
         <ul
-          class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+          class="lg:w-1/2 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
         >
           <li>
             <div
@@ -156,73 +167,70 @@
         </ul>
         <!-- Timeline: END -->
       </div>
-      <!-- Row 1: END -->
-      <!-- Row 2: START -->
-      <section class="text-gray-600 body-font bg-slate-100">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap">
-            <div
-              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-            >
-              <h2
-                class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
-              >
-                Fast, Flexible Financing
-              </h2>
-              <p class="leading-relaxed text-base mb-4">
-                Simple application with only a few documents required. Our
-                automated underwriting soution yields a decision quickly so that
-                your financing can be as fast as you.
-              </p>
-            </div>
-            <div
-              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-            >
-              <h2
-                class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
-              >
-                Flexible Loan Terms
-              </h2>
-              <p class="leading-relaxed text-base mb-4">
-                We offer a range of loan amounts to meet your needs. We can
-                adapt our terms to meet the needs the needs of your working
-                capital cycles (up to one year) and even offer revolving lines
-                of credit.
-              </p>
-            </div>
-            <div
-              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-            >
-              <h2
-                class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
-              >
-                Competitive Pricing
-              </h2>
-              <p class="leading-relaxed text-base mb-4">
-                Liquid Carbon is the first fintech debt product for carbon
-                removal developers. Our loans are non-dilutive, fast, and a less
-                costly form of capital relative to the equity financing
-                solutions more commonly available to developers.
-              </p>
-            </div>
-            <div
-              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
-            >
-              <h2
-                class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
-              >
-                No onerous covenants or personal guarantees
-              </h2>
-              <p class="leading-relaxed text-base mb-4">
-                No personal guarantees required. No negative covenants imposed,
-                unlike cashflow-based lending.
-              </p>
-            </div>
-          </div>
+    </section>
+    <!-- Row 1: END -->
+    <!-- Row 2: START -->
+    <section class="w-full bg-secondary">
+      <div class="container mx-auto flex flex-wrap px-5 py-24">
+        <div
+          class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+        >
+          <h2
+            class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+          >
+            Fast, Flexible Financing
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            Simple application with only a few documents required. Our automated
+            underwriting soution yields a decision quickly so that your
+            financing can be as fast as you.
+          </p>
         </div>
-      </section>
-      <!-- Row 2: END -->
-    </div>
+        <div
+          class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+        >
+          <h2
+            class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+          >
+            Flexible Loan Terms
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            We offer a range of loan amounts to meet your needs. We can adapt
+            our terms to meet the needs the needs of your working capital cycles
+            (up to one year) and even offer revolving lines of credit.
+          </p>
+        </div>
+        <div
+          class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+        >
+          <h2
+            class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+          >
+            Competitive Pricing
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            Liquid Carbon is the first fintech debt product for carbon removal
+            developers. Our loans are non-dilutive, fast, and a less costly form
+            of capital relative to the equity financing solutions more commonly
+            available to developers.
+          </p>
+        </div>
+        <div
+          class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+        >
+          <h2
+            class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+          >
+            No onerous covenants or personal guarantees
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            No personal guarantees required. No negative covenants imposed,
+            unlike cashflow-based lending.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Row 2: END -->
     <!-- Grid container: END -->
   </body>
 </html>
