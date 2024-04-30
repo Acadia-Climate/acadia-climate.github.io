@@ -7,10 +7,7 @@
   </head>
 
   <body>
-    <div
-      class="grid max-h-screen h-screen place-items-center bg-accent"
-      style="background-image: url(img/forest.jpg)"
-    >
+    <div class="grid max-h-screen h-screen place-items-center bg-accent">
       <!-- Navbar start-->
       <div class="navbar w-full place-self-start bg-accent text-accent-content">
         <div class="flex-1">
@@ -28,7 +25,36 @@
       </div>
       <!-- Navbar end-->
       <!-- Main content: START -->
-      <div
+      <section
+        class="container flex flex-col items-center px-6 py-12 mx-auto lg:flex-row text-center md:text-left"
+      >
+        <div class="lg:w-1/2">
+          <h1
+            class="max-w-xl text-4xl font-medium tracking-wide text-white capitalize md:text-6xl"
+          >
+            Investing in a greener future
+          </h1>
+          <p class="max-w-lg mt-4 text-xl text-accent-content">
+            We enable carbon removal project developers to unlock liquidity so
+            that they can focus less on cash-flow issues and more on what they
+            do best: making the planet a better place for all of us
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a class="btn btn-primary mt-6" href="/product"> Learn more </a>
+          </div>
+        </div>
+
+        <div
+          class="lg:h-[38rem] mt-12 lg:mt-0 w-full mx-auto max-w-md overflow-hidden rounded-t-full outline outline-4 outline-offset-4 outline-primary/40"
+        >
+          <img
+            class="object-cover w-full h-full rounded-t-full"
+            src="img/forest.png"
+            alt="main page"
+          />
+        </div>
+      </section>
+      <!-- <div
         class="flex flex-row min-w-[80%] min-h-full justify-self-start roundy bg-slate-900"
       >
         <div class="max-w-lg text-left text-white page-text">
@@ -40,7 +66,7 @@
           </p>
           <button class="btn btn-primary">Learn more</button>
         </div>
-      </div>
+      </div> -->
       <!-- Main content: END -->
       <footer
         class="place-self-end w-full flex place-content-center place-items-center h-8 bg-base-100 text-base-content"
