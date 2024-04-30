@@ -1890,6 +1890,10 @@ html {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
+.grid-rows-3{
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -2005,6 +2009,14 @@ html {
 
 .bg-bottom{
   background-position: bottom;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .p-4{

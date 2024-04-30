@@ -7,27 +7,27 @@
   </head>
 
   <body>
-    <!-- Navbar start-->
-    <div class="navbar sticky w-full top-0 z-50 bg-accent text-accent-content">
-      <div class="flex-1">
-        <a class="btn btn-ghost text-xl" href="/">
-          <img src="img/acadia_inverted.svg" class="h-10" />
-        </a>
-      </div>
-      <div class="flex-none">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="/product">Product</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="mailto:juan@acadiaclimate.com">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <!-- Navbar end-->
-    <!-- Main content: START -->
     <div
-      class="grid h-screen place-items-center bg-cover"
+      class="grid grid-rows-3 max-h-screen h-screen place-items-center bg-cover"
       style="background-image: url(img/forest.jpg)"
     >
+      <!-- Navbar start-->
+      <div class="navbar w-full place-self-start bg-accent text-accent-content">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl" href="/">
+            <img src="img/acadia_inverted.svg" class="h-10" />
+          </a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/product">Product</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="mailto:juan@acadiaclimate.com">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Navbar end-->
+      <!-- Main content: START -->
       <div class="max-w-lg text-center text-white">
         <div class="page-text">
           <h1 class="mb-5 text-6xl font-bold">Investing in a greener future</h1>
@@ -39,16 +39,14 @@
           <button class="btn btn-primary">Learn more</button>
         </div>
       </div>
-      <!-- <div class="w-full h-full" style="background-image: url(img/forest.jpg)">
-      </div> -->
+      <!-- Main content: END -->
+      <footer
+        class="place-self-end w-full flex place-content-center place-items-center h-8 bg-base-100 text-base-content"
+      >
+        <p class="text-xs text-gray-400">
+          Copyright &copy; 2024 Acadia Climate, Corp. All Rights Reserved.
+        </p>
+      </footer>
     </div>
   </body>
-  <!-- Main content: END -->
-  <footer
-    class="flex place-content-center place-items-center h-8 bg-base-100 text-base-content"
-  >
-    <p class="text-xs text-gray-400">
-      Copyright &copy; 2024 Acadia Climate, Corp. All Rights Reserved.
-    </p>
-  </footer>
 </html>
