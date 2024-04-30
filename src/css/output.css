@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Forum&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-/*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
-*/
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
+
+/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -543,7 +543,7 @@ html{
 }
 
 html {
-  font-family: "Roboto", system-ui, sans-serif;
+  font-family: "Forum", system-ui, sans-serif;
 }
 
 *, ::before, ::after{
@@ -1817,10 +1817,6 @@ html {
   margin-top: 3rem;
 }
 
-.mt-4{
-  margin-top: 1rem;
-}
-
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -1829,8 +1825,8 @@ html {
   margin-top: 2.5rem;
 }
 
-.block{
-  display: block;
+.mt-20{
+  margin-top: 5rem;
 }
 
 .flex{
@@ -1857,24 +1853,12 @@ html {
   height: 2rem;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.h-\[38rem\]{
-  height: 38rem;
-}
-
 .h-full{
   height: 100%;
 }
 
-.max-h-screen{
-  max-height: 100vh;
-}
-
-.min-h-full{
-  min-height: 100%;
+.h-screen{
+  height: 100vh;
 }
 
 .min-h-screen{
@@ -1893,20 +1877,16 @@ html {
   width: 100%;
 }
 
-.min-w-\[80\%\]{
-  min-width: 80%;
-}
-
 .max-w-lg{
   max-width: 32rem;
 }
 
-.max-w-screen-md{
-  max-width: 768px;
-}
-
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-screen-md{
+  max-width: 768px;
 }
 
 .max-w-xl{
@@ -1957,24 +1937,8 @@ html {
   gap: 1rem;
 }
 
-.place-self-start{
-  place-self: start;
-}
-
-.place-self-end{
-  place-self: end;
-}
-
-.justify-self-start{
-  justify-self: start;
-}
-
 .overflow-hidden{
   overflow: hidden;
-}
-
-.rounded-full{
-  border-radius: 9999px;
 }
 
 .rounded-md{
@@ -1986,10 +1950,6 @@ html {
   border-top-right-radius: 9999px;
 }
 
-.border-2{
-  border-width: 2px;
-}
-
 .border-l-2{
   border-left-width: 2px;
 }
@@ -1997,11 +1957,6 @@ html {
 .border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
-.border-\[\#475F45\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(71 95 69 / var(--tw-border-opacity));
 }
 
 .border-opacity-60{
@@ -2043,16 +1998,6 @@ html {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.bg-slate-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#475F45\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 95 69 / var(--tw-bg-opacity));
-}
-
 .bg-cover{
   background-size: cover;
 }
@@ -2080,9 +2025,19 @@ html {
   padding-right: 1.25rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-24{
@@ -2095,57 +2050,29 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-14{
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
-}
-
-.pt-20{
+.py-20{
   padding-top: 5rem;
-}
-
-.pt-32{
-  padding-top: 8rem;
+  padding-bottom: 5rem;
 }
 
 .pb-12{
   padding-bottom: 3rem;
 }
 
-.pt-16{
-  padding-top: 4rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
+.pt-20{
+  padding-top: 5rem;
 }
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pb-24{
+  padding-bottom: 6rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-left{
@@ -2160,13 +2087,14 @@ html {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-serif{
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl{
@@ -2199,16 +2127,6 @@ html {
   line-height: 1rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .font-black{
   font-weight: 900;
 }
@@ -2221,10 +2139,6 @@ html {
   font-weight: 500;
 }
 
-.uppercase{
-  text-transform: uppercase;
-}
-
 .capitalize{
   text-transform: capitalize;
 }
@@ -2235,18 +2149,6 @@ html {
 
 .leading-relaxed{
   line-height: 1.625;
-}
-
-.leading-4{
-  line-height: 1rem;
-}
-
-.tracking-wide{
-  letter-spacing: 0.025em;
-}
-
-.tracking-widest{
-  letter-spacing: 0.1em;
 }
 
 .text-accent-content{
@@ -2279,21 +2181,6 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#343D33\]{
-  --tw-text-opacity: 1;
-  color: rgb(52 61 51 / var(--tw-text-opacity));
-}
-
-.text-\[\#475F45\]{
-  --tw-text-opacity: 1;
-  color: rgb(71 95 69 / var(--tw-text-opacity));
-}
-
-.text-gray-500{
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
 .bg-blend-multiply{
   background-blend-mode: multiply;
 }
@@ -2316,26 +2203,8 @@ html {
   outline-offset: 4px;
 }
 
-.outline-\[\#475F45\]\/40{
-  outline-color: rgb(71 95 69 / 0.4);
-}
-
-.outline-secondary\/40{
-  outline-color: var(--fallback-s,oklch(var(--s)/0.4));
-}
-
 .outline-primary\/40{
   outline-color: var(--fallback-p,oklch(var(--p)/0.4));
-}
-
-.transition-colors{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-300{
-  transition-duration: 300ms;
 }
 
 .roundy {
@@ -2526,46 +2395,7 @@ html {
   }
 }
 
-.hover\:bg-\[\#475F45\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 95 69 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#475F45\]\/80:hover{
-  background-color: rgb(71 95 69 / 0.8);
-}
-
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 @media (min-width: 640px){
-  .sm\:mx-4{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .sm\:mt-0{
-    margin-top: 0px;
-  }
-
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:items-center{
-    align-items: center;
-  }
-
-  .sm\:justify-center{
-    justify-content: center;
-  }
-
-  .sm\:text-center{
-    text-align: center;
-  }
-
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
