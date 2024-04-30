@@ -1825,6 +1825,10 @@ html {
   margin-top: 1.5rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1871,6 +1875,10 @@ html {
 
 .min-h-full{
   min-height: 100%;
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-5{
@@ -2100,6 +2108,44 @@ html {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-14{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
+}
+
+.pb-12{
+  padding-bottom: 3rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-left{
