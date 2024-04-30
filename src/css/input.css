@@ -9,6 +9,11 @@
   }
 }
 
+.roundy {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
 .page-text {
   text-shadow: 0px 2px 4px black;
 }
