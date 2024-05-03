@@ -7,16 +7,14 @@
   </head>
   <body>
     <!-- NAVBAR: START-->
-    <nav
-      class="navbar sticky w-full top-0 z-50 bg-primary text-primary-content shadow-md"
-    >
+    <nav class="navbar fixed top-0 z-50 text-white">
       <div class="flex-1">
         <a class="btn btn-ghost text-xl" href="./">
-          <img src="img/acadia.svg" class="h-10" />
+          <img src="img/acadia_inverted.svg" class="h-10" />
         </a>
       </div>
       <div class="flex-none">
-        <ul class="menu menu-horizontal px-1">
+        <ul class="menu menu-horizontal page-text text-xl px-1">
           <li><a class="hover:font-bold" href="./faq">FAQ</a></li>
           <li><a class="hover:font-bold" href="./about">About Us</a></li>
           <li>
@@ -37,25 +35,51 @@
     <main>
       <article>
         <!-- LANDING SECTION: START -->
-        <header
+        <div
           id="landing"
-          class="grid hero-container md:bg-center h-screen place-items-start"
+          class="flex place-content-center bg-accent bg-gradient-to-br from-accent to-secondary"
         >
-          <div class="pl-10 pt-10 rounded-md page-text text-left text-white">
-            <h1 class="mb-5 text-6xl font-bold">Carbon Finance Made Simple</h1>
-            <p class="max-w-xl pt-6 mb-5 text-2xl">
-              We provide fast and competitive financing to carbon removal
-              project developers so that they can focus less on liquidity
-              management and more on making the planet a better place for all of
-              us
-            </p>
-            <a class="btn btn-primary" href="#product"> Learn more </a>
+          <div
+            class="section-container grid text-black divide-x-4 divide-y-[5px] divide-slate-400/75"
+          >
+            <div
+              class="main px-10 py-20 bg-accent bg-gradient-to-br from-accent to-secondary 2xl:bg-none 2xl:bg-inherit"
+            >
+              <h1 class="text-4xl font-bold text-white capitalize md:text-6xl">
+                Carbon Finance Made Simple
+              </h1>
+              <p class="mt-6 text-2xl text-accent-content">
+                We provide fast and competitive financing to carbon removal
+                project developers so that they can focus less on liquidity
+                management and more on making the planet a better place for all
+                of us
+              </p>
+              <a
+                class="btn mt-6 btn-primary text-primary-content"
+                href="#product"
+              >
+                Learn more
+              </a>
+            </div>
+            <div
+              class="img1 bg-secondary bg-cover"
+              style="background-image: url(img/forestry-technician.jpg)"
+            ></div>
+            <div
+              class="img2 bg-slate-200 bg-cover"
+              style="background-image: url(img/planting-field.png)"
+            ></div>
+            <div
+              class="main-img bg-accent bg-cover bg-right"
+              style="background-image: url(img/river-aerial.jpg)"
+            ></div>
           </div>
-        </header>
+        </div>
         <!-- LANDING SECTION: END -->
 
         <!-- PRODUCT SECTION: START -->
-        <section id="product" class="py-16 bg-primary text-primary-content">
+        <section id="product" class="pb-16 bg-primary text-primary-content">
+          <div class="sticky top-0 h-[4.2rem] z-40 bg-primary"></div>
           <div class="product-container container mx-auto px-5">
             <div class="flex [grid-area:header] place-content-center mb-5">
               <object
