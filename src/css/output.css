@@ -1779,14 +1779,6 @@ html {
   z-index: 50;
 }
 
-.col-span-full{
-  grid-column: 1 / -1;
-}
-
-.row-span-3{
-  grid-row: span 3 / span 3;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1821,18 +1813,6 @@ html {
   margin-top: 1.5rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.ml-2{
-  margin-left: 0.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -1843,10 +1823,6 @@ html {
 
 .h-10{
   height: 2.5rem;
-}
-
-.h-48{
-  height: 12rem;
 }
 
 .h-5{
@@ -1863,22 +1839,6 @@ html {
 
 .h-screen{
   height: 100vh;
-}
-
-.max-h-20{
-  max-height: 5rem;
-}
-
-.max-h-10{
-  max-height: 2.5rem;
-}
-
-.max-h-14{
-  max-height: 3.5rem;
-}
-
-.max-h-16{
-  max-height: 4rem;
 }
 
 .max-h-24{
@@ -1961,10 +1921,6 @@ html {
   gap: 1rem;
 }
 
-.place-self-start{
-  place-self: start;
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -2014,16 +1970,6 @@ html {
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
-}
-
-.bg-slate-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
-.bg-slate-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -2078,9 +2024,8 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pb-12{
@@ -2089,26 +2034,6 @@ html {
 
 .pt-20{
   padding-top: 5rem;
-}
-
-.pt-6{
-  padding-top: 1.5rem;
-}
-
-.pb-24{
-  padding-bottom: 6rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pl-10{
-  padding-left: 2.5rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
 }
 
 .text-left{
@@ -2221,12 +2146,6 @@ html {
   background-blend-mode: multiply;
 }
 
-.shadow-2xl{
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .outline{
   outline-style: solid;
 }
@@ -2248,7 +2167,8 @@ html {
   border-bottom-right-radius: 9999px;
 }
 
-.page-text {
+.page-text > h1,
+.page-text > p {
   text-shadow: 0px 2px 4px black;
 }
 
@@ -2432,14 +2352,6 @@ html {
 }
 
 @media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:text-center{
-    text-align: center;
-  }
-
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
