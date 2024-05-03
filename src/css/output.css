@@ -1821,18 +1821,6 @@ html {
   margin-top: 1.5rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.ml-2{
-  margin-left: 0.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -1863,22 +1851,6 @@ html {
 
 .h-screen{
   height: 100vh;
-}
-
-.max-h-20{
-  max-height: 5rem;
-}
-
-.max-h-10{
-  max-height: 2.5rem;
-}
-
-.max-h-14{
-  max-height: 3.5rem;
-}
-
-.max-h-16{
-  max-height: 4rem;
 }
 
 .max-h-24{
@@ -1959,10 +1931,6 @@ html {
 
 .gap-4{
   gap: 1rem;
-}
-
-.place-self-start{
-  place-self: start;
 }
 
 .overflow-hidden{
@@ -2078,9 +2046,8 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pb-12{
@@ -2089,26 +2056,6 @@ html {
 
 .pt-20{
   padding-top: 5rem;
-}
-
-.pt-6{
-  padding-top: 1.5rem;
-}
-
-.pb-24{
-  padding-bottom: 6rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pl-10{
-  padding-left: 2.5rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
 }
 
 .text-left{
@@ -2432,14 +2379,6 @@ html {
 }
 
 @media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:text-center{
-    text-align: center;
-  }
-
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
