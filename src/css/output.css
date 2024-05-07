@@ -1763,6 +1763,10 @@ html {
   border-end-end-radius: 0px;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .relative{
   position: relative;
 }
@@ -1777,14 +1781,6 @@ html {
 
 .z-50{
   z-index: 50;
-}
-
-.col-span-full{
-  grid-column: 1 / -1;
-}
-
-.row-span-3{
-  grid-row: span 3 / span 3;
 }
 
 .mx-auto{
@@ -1833,10 +1829,6 @@ html {
   height: 2.5rem;
 }
 
-.h-48{
-  height: 12rem;
-}
-
 .h-5{
   height: 1.25rem;
 }
@@ -1847,10 +1839,6 @@ html {
 
 .h-full{
   height: 100%;
-}
-
-.h-screen{
-  height: 100vh;
 }
 
 .max-h-24{
@@ -1937,10 +1925,6 @@ html {
   overflow: hidden;
 }
 
-.rounded-md{
-  border-radius: 0.375rem;
-}
-
 .rounded-t-full{
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
@@ -1957,11 +1941,6 @@ html {
 
 .border-opacity-60{
   --tw-border-opacity: 0.6;
-}
-
-.bg-\[\#92b1d0\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(146 177 208 / var(--tw-bg-opacity));
 }
 
 .bg-accent{
@@ -1984,18 +1963,26 @@ html {
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
 }
 
-.bg-slate-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+.bg-transparent{
+  background-color: transparent;
 }
 
-.bg-slate-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+.bg-gradient-to-br{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
-.bg-cover{
-  background-size: cover;
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-accent{
+  --tw-gradient-from: var(--fallback-a,oklch(var(--a)/1)) var(--tw-gradient-from-position);
+  --tw-gradient-to: var(--fallback-a,oklch(var(--a)/0)) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-secondary{
+  --tw-gradient-to: var(--fallback-s,oklch(var(--s)/1)) var(--tw-gradient-to-position);
 }
 
 .bg-fixed{
@@ -2034,11 +2021,6 @@ html {
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .py-6{
@@ -2162,16 +2144,6 @@ html {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.bg-blend-multiply{
-  background-blend-mode: multiply;
-}
-
-.shadow-2xl{
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline{
