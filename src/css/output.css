@@ -1805,14 +1805,6 @@ html {
   margin-bottom: 1.75rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -1833,20 +1825,12 @@ html {
   height: 2rem;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .h-screen{
   height: 100vh;
 }
 
 .max-h-24{
   max-height: 6rem;
-}
-
-.min-h-screen{
-  min-height: 100vh;
 }
 
 .w-5{
@@ -1865,16 +1849,8 @@ html {
   max-width: 32rem;
 }
 
-.max-w-md{
-  max-width: 28rem;
-}
-
 .max-w-screen-md{
   max-width: 768px;
-}
-
-.max-w-xl{
-  max-width: 36rem;
 }
 
 .flex-1{
@@ -1887,10 +1863,6 @@ html {
 
 .flex-row{
   flex-direction: row;
-}
-
-.flex-col{
-  flex-direction: column;
 }
 
 .flex-wrap{
@@ -1921,17 +1893,8 @@ html {
   gap: 1rem;
 }
 
-.overflow-hidden{
-  overflow: hidden;
-}
-
 .rounded-md{
   border-radius: 0.375rem;
-}
-
-.rounded-t-full{
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
 }
 
 .border-l-2{
@@ -1945,11 +1908,6 @@ html {
 
 .border-opacity-60{
   --tw-border-opacity: 0.6;
-}
-
-.bg-\[\#92b1d0\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(146 177 208 / var(--tw-bg-opacity));
 }
 
 .bg-accent{
@@ -1972,19 +1930,6 @@ html {
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
 }
 
-.bg-cover{
-  background-size: cover;
-}
-
-.bg-fixed{
-  background-attachment: fixed;
-}
-
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-4{
   padding: 1rem;
 }
@@ -1999,11 +1944,6 @@ html {
   padding-right: 1.25rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -2014,11 +1954,6 @@ html {
   padding-bottom: 4rem;
 }
 
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2026,14 +1961,6 @@ html {
 
 .pb-10{
   padding-bottom: 2.5rem;
-}
-
-.pb-12{
-  padding-bottom: 3rem;
-}
-
-.pt-20{
-  padding-top: 5rem;
 }
 
 .text-left{
@@ -2100,10 +2027,6 @@ html {
   font-weight: 500;
 }
 
-.capitalize{
-  text-transform: capitalize;
-}
-
 .italic{
   font-style: italic;
 }
@@ -2142,26 +2065,6 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.bg-blend-multiply{
-  background-blend-mode: multiply;
-}
-
-.outline{
-  outline-style: solid;
-}
-
-.outline-4{
-  outline-width: 4px;
-}
-
-.outline-offset-4{
-  outline-offset: 4px;
-}
-
-.outline-primary\/40{
-  outline-color: var(--fallback-p,oklch(var(--p)/0.4));
-}
-
 .roundy {
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -2182,6 +2085,20 @@ html {
   grid-template-rows: repeat(9, 1fr);
   height: 100vh;
   box-sizing: border-box;
+}
+
+.hero-container {
+  background-image: url(../img/trees_water_flipped.jpg),
+    linear-gradient(
+      to right bottom,
+      oklch(57.28% 0.1452 245.65) 40%,
+      oklch(91.56% 0.1258 179.08) 60%
+    );
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media not all and (min-width: 768px){
@@ -2363,10 +2280,6 @@ html {
     width: 100%;
   }
 
-  .md\:justify-start{
-    justify-content: flex-start;
-  }
-
   .md\:pl-10{
     padding-left: 2.5rem;
   }
@@ -2382,28 +2295,11 @@ html {
   .md\:text-end{
     text-align: end;
   }
-
-  .md\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 1024px){
-  .lg\:mt-0{
-    margin-top: 0px;
-  }
-
-  .lg\:h-\[38rem\]{
-    height: 38rem;
-  }
-
   .lg\:w-1\/2{
     width: 50%;
-  }
-
-  .lg\:flex-row{
-    flex-direction: row;
   }
 }
 
