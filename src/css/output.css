@@ -725,7 +725,6 @@ html {
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   border-width: var(--border-btn, 1px);
-  animation: button-pop var(--animation-btn, 0.25s) ease-out;
   transition-property: color, background-color, border-color, opacity, box-shadow, transform;
   --tw-text-opacity: 1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
@@ -1084,6 +1083,12 @@ html {
   margin: 0.25rem;
   align-self: flex-start;
   justify-self: center;
+}
+
+@media (prefers-reduced-motion: no-preference){
+  .btn{
+    animation: button-pop var(--animation-btn, 0.25s) ease-out;
+  }
 }
 
 .btn:active:hover,
@@ -1853,6 +1858,14 @@ html {
   max-width: 768px;
 }
 
+.max-w-xl{
+  max-width: 36rem;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1871,6 +1884,10 @@ html {
 
 .place-content-center{
   place-content: center;
+}
+
+.place-items-start{
+  place-items: start;
 }
 
 .place-items-center{
@@ -1961,6 +1978,22 @@ html {
 
 .pb-10{
   padding-bottom: 2.5rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-left{
