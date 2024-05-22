@@ -1850,20 +1850,12 @@ html {
   width: 100%;
 }
 
-.max-w-lg{
-  max-width: 32rem;
-}
-
 .max-w-screen-md{
   max-width: 768px;
 }
 
 .max-w-xl{
   max-width: 36rem;
-}
-
-.max-w-2xl{
-  max-width: 42rem;
 }
 
 .flex-1{
@@ -1978,10 +1970,6 @@ html {
 
 .pb-10{
   padding-bottom: 2.5rem;
-}
-
-.pl-4{
-  padding-left: 1rem;
 }
 
 .pl-10{
