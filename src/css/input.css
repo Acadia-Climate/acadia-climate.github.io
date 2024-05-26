@@ -46,3 +46,23 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+/*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+.product-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "timeline";
+}
+@media (min-width: 768px) {
+  .product-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "content timeline";
+  }
+}

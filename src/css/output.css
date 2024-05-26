@@ -1968,6 +1968,16 @@ html {
   padding-bottom: 1.5rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2086,14 +2096,16 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-800{
-  --tw-text-opacity: 1;
-  color: rgb(153 27 27 / var(--tw-text-opacity));
+.\[grid-area\:content\]{
+  grid-area: content;
 }
 
-.text-zinc-300{
-  --tw-text-opacity: 1;
-  color: rgb(212 212 216 / var(--tw-text-opacity));
+.\[grid-area\:header\]{
+  grid-area: header;
+}
+
+.\[grid-area\:timeline\]{
+  grid-area: timeline;
 }
 
 .roundy {
@@ -2130,6 +2142,28 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+/*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+
+.product-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "timeline";
+}
+
+@media (min-width: 768px) {
+  .product-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "content timeline";
+  }
 }
 
 @media not all and (min-width: 768px){
@@ -2309,10 +2343,6 @@ html {
 @media (min-width: 768px){
   .md\:w-full{
     width: 100%;
-  }
-
-  .md\:pl-10{
-    padding-left: 2.5rem;
   }
 
   .md\:text-left{
