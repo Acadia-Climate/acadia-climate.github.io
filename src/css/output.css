@@ -1919,11 +1919,6 @@ html {
   --tw-border-opacity: 0.6;
 }
 
-.bg-accent{
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
-}
-
 .bg-base-100{
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
@@ -2054,11 +2049,6 @@ html {
 
 .leading-relaxed{
   line-height: 1.625;
-}
-
-.text-accent-content{
-  --tw-text-opacity: 1;
-  color: var(--fallback-ac,oklch(var(--ac)/var(--tw-text-opacity)));
 }
 
 .text-base-content{
