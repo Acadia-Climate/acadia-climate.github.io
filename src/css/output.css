@@ -2100,6 +2100,11 @@ details.collapse summary::-webkit-details-marker{
   margin-bottom: 1.25rem;
 }
 
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -2156,10 +2161,6 @@ details.collapse summary::-webkit-details-marker{
   max-height: 6rem;
 }
 
-.min-h-20{
-  min-height: 5rem;
-}
-
 .min-h-28{
   min-height: 7rem;
 }
@@ -2174,6 +2175,10 @@ details.collapse summary::-webkit-details-marker{
 
 .w-full{
   width: 100%;
+}
+
+.max-w-3xl{
+  max-width: 48rem;
 }
 
 .max-w-screen-md{
@@ -2192,18 +2197,6 @@ details.collapse summary::-webkit-details-marker{
   flex: none;
 }
 
-.border-collapse{
-  border-collapse: collapse;
-}
-
-.list-inside{
-  list-style-position: inside;
-}
-
-.list-outside{
-  list-style-position: outside;
-}
-
 .list-\[circle\]{
   list-style-type: circle;
 }
@@ -2212,8 +2205,8 @@ details.collapse summary::-webkit-details-marker{
   list-style-type: disc;
 }
 
-.auto-rows-min{
-  grid-auto-rows: min-content;
+.grid-rows-\[min-content_auto\]{
+  grid-template-rows: min-content auto;
 }
 
 .grid-rows-\[min-content_auto_min-content\]{
@@ -2248,10 +2241,6 @@ details.collapse summary::-webkit-details-marker{
   justify-content: center;
 }
 
-.justify-items-center{
-  justify-items: center;
-}
-
 .gap-0{
   gap: 0px;
 }
@@ -2268,16 +2257,12 @@ details.collapse summary::-webkit-details-marker{
   border-radius: 0px;
 }
 
-.border{
-  border-width: 1px;
+.border-b{
+  border-bottom-width: 1px;
 }
 
 .border-l-2{
   border-left-width: 2px;
-}
-
-.border-b{
-  border-bottom-width: 1px;
 }
 
 .border-base-300{
@@ -2292,11 +2277,6 @@ details.collapse summary::-webkit-details-marker{
 
 .border-opacity-60{
   --tw-border-opacity: 0.6;
-}
-
-.bg-accent{
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
 }
 
 .bg-base-100{
@@ -2323,11 +2303,6 @@ details.collapse summary::-webkit-details-marker{
   padding-right: 0.25rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -2346,11 +2321,6 @@ details.collapse summary::-webkit-details-marker{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-7{
@@ -2372,26 +2342,6 @@ details.collapse summary::-webkit-details-marker{
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pl-8{
-  padding-left: 2rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
-}
-
-.pt-14{
-  padding-top: 3.5rem;
-}
-
-.pt-7{
-  padding-top: 1.75rem;
-}
-
-.pl-7{
-  padding-left: 1.75rem;
 }
 
 .text-left{
@@ -2495,6 +2445,12 @@ details.collapse summary::-webkit-details-marker{
   text-decoration-line: underline;
 }
 
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -2511,6 +2467,10 @@ details.collapse summary::-webkit-details-marker{
 
 .\[grid-area\:timeline\]{
   grid-area: timeline;
+}
+
+.leaf-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .roundy {
