@@ -6,7 +6,7 @@
     <link href="css/output.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="grid h-screen grid-rows-[min-content_auto_min-content]">
     <!-- NAVBAR: START-->
     <nav
       class="navbar sticky w-full top-0 z-50 bg-primary text-primary-content shadow-md"
@@ -30,12 +30,28 @@
     </nav>
     <!-- NAVBAR: END-->
 
-    <main class="">
-      <article class="flex-grow bg-secondary text-primary-content">
-        <h1>FAQ</h1>
+    <main class="bg-secondary">
+      <article
+        class="grid justify-items-center auto-rows-min h-full text-primary-content bg-primary"
+      >
+        <header class="min-h-28 w-full mb-7 py-7 pl-7 bg-accent">
+          <hgroup>
+            <h1 class="mb-4 text-5xl font-bold">Frequently Asked Questions</h1>
+            <p>
+              Can't find an answer to your question here? Please
+              <a
+                class="hover:font-bold underline"
+                href="mailto:juan@acadiaclimate.com"
+              >
+                contact</a
+              >
+              us and we'd be happy to help!
+            </p>
+          </hgroup>
+        </header>
         <div
           tabindex="0"
-          class="collapse collapse-arrow border border-base-300 bg-primary"
+          class="container collapse collapse-arrow rounded-none border-b border-base-300"
         >
           <input type="checkbox" />
           <h2 class="collapse-title text-xl font-medium">
@@ -53,7 +69,7 @@
         </div>
         <div
           tabindex="0"
-          class="collapse collapse-arrow border border-base-300 bg-primary"
+          class="container collapse collapse-arrow rounded-none border-b border-base-300"
         >
           <input type="checkbox" />
           <h2 class="collapse-title text-xl font-medium">
@@ -70,7 +86,7 @@
         </div>
         <div
           tabindex="0"
-          class="collapse collapse-arrow border border-base-300 bg-primary"
+          class="container collapse collapse-arrow rounded-none border-b border-base-300"
         >
           <input type="checkbox" />
           <h2 class="collapse-title text-xl font-medium">
@@ -85,7 +101,7 @@
         </div>
         <div
           tabindex="0"
-          class="collapse collapse-arrow border border-base-300 bg-primary"
+          class="container collapse collapse-arrow rounded-none border-b border-base-300"
         >
           <input type="checkbox" />
           <h2 class="collapse-title text-xl font-medium">
@@ -100,7 +116,7 @@
         </div>
         <div
           tabindex="0"
-          class="collapse collapse-arrow border border-base-300 bg-primary"
+          class="container collapse collapse-arrow rounded-none border-b border-base-300"
         >
           <input type="checkbox" />
           <h2 class="collapse-title text-xl font-medium">
@@ -113,7 +129,7 @@
         </div>
         <div
           tabindex="0"
-          class="collapse collapse-arrow border border-base-300 bg-primary"
+          class="container collapse collapse-arrow rounded-none border-b border-base-300"
         >
           <input type="checkbox" />
           <h2 class="collapse-title text-xl font-medium">
@@ -129,7 +145,7 @@
         </div>
         <div
           tabindex="0"
-          class="collapse collapse-arrow border border-base-300 bg-primary"
+          class="container collapse collapse-arrow rounded-none border-b border-base-300"
         >
           <input type="checkbox" />
           <h2 class="collapse-title text-xl font-medium">
@@ -144,14 +160,14 @@
         </div>
         <div
           tabindex="0"
-          class="collapse collapse-arrow border border-base-300 bg-primary"
+          class="container collapse collapse-arrow rounded-none border-b border-base-300"
         >
           <input type="checkbox" />
           <h2 class="collapse-title text-xl font-medium">
             What can I do with financing from Acadia?
           </h2>
           <div class="collapse-content">
-            <ul class="list-disc">
+            <ul class="list-disc ml-4">
               <li>
                 Cover pre-issuance costs like registry fees, validation and
                 verification bodies (VVBs) costs, and others.

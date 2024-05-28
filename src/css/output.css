@@ -544,6 +544,7 @@ html{
 
 html {
   font-family: "Forum", system-ui, sans-serif;
+  font-size: 1rem;
 }
 
 *, ::before, ::after{
@@ -1109,23 +1110,6 @@ html {
 :where(.navbar > *:not(script, style)){
   display: inline-flex;
   align-items: center;
-}
-
-.range{
-  height: 1.5rem;
-  width: 100%;
-  cursor: pointer;
-  -moz-appearance: none;
-       appearance: none;
-  -webkit-appearance: none;
-  --range-shdw: var(--fallback-bc,oklch(var(--bc)/1));
-  overflow: hidden;
-  border-radius: var(--rounded-box, 1rem);
-  background-color: transparent;
-}
-
-.range:focus{
-  outline: none;
 }
 
 .timeline{
@@ -1772,65 +1756,6 @@ details.collapse summary::-webkit-details-marker{
   }
 }
 
-.range:focus-visible::-webkit-slider-thumb{
-  --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem var(--range-shdw) inset;
-}
-
-.range:focus-visible::-moz-range-thumb{
-  --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem var(--range-shdw) inset;
-}
-
-.range::-webkit-slider-runnable-track{
-  height: 0.5rem;
-  width: 100%;
-  border-radius: var(--rounded-box, 1rem);
-  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
-}
-
-.range::-moz-range-track{
-  height: 0.5rem;
-  width: 100%;
-  border-radius: var(--rounded-box, 1rem);
-  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
-}
-
-.range::-webkit-slider-thumb{
-  position: relative;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: var(--rounded-box, 1rem);
-  border-style: none;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-  appearance: none;
-  -webkit-appearance: none;
-  top: 50%;
-  color: var(--range-shdw);
-  transform: translateY(-50%);
-  --filler-size: 100rem;
-  --filler-offset: 0.6rem;
-  box-shadow: 0 0 0 3px var(--range-shdw) inset,
-      var(--focus-shadow, 0 0),
-      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
-}
-
-.range::-moz-range-thumb{
-  position: relative;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: var(--rounded-box, 1rem);
-  border-style: none;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-  top: 50%;
-  color: var(--range-shdw);
-  --filler-size: 100rem;
-  --filler-offset: 0.5rem;
-  box-shadow: 0 0 0 3px var(--range-shdw) inset,
-      var(--focus-shadow, 0 0),
-      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
-}
-
 @keyframes rating-pop{
   0%{
     transform: translateY(-0.125em);
@@ -2153,10 +2078,6 @@ details.collapse summary::-webkit-details-marker{
   visibility: collapse;
 }
 
-.relative{
-  position: relative;
-}
-
 .sticky{
   position: sticky;
 }
@@ -2219,29 +2140,28 @@ details.collapse summary::-webkit-details-marker{
   height: 2rem;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-full{
   height: 100%;
 }
 
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.max-h-24{
-  max-height: 6rem;
+.h-screen{
+  height: 100vh;
 }
 
 .max-h-20{
   max-height: 5rem;
 }
 
-.max-h-5{
-  max-height: 1.25rem;
+.max-h-24{
+  max-height: 6rem;
+}
+
+.min-h-20{
+  min-height: 5rem;
+}
+
+.min-h-28{
+  min-height: 7rem;
 }
 
 .w-5{
@@ -2272,16 +2192,32 @@ details.collapse summary::-webkit-details-marker{
   flex: none;
 }
 
-.flex-grow{
-  flex-grow: 1;
+.border-collapse{
+  border-collapse: collapse;
+}
+
+.list-inside{
+  list-style-position: inside;
+}
+
+.list-outside{
+  list-style-position: outside;
+}
+
+.list-\[circle\]{
+  list-style-type: circle;
 }
 
 .list-disc{
   list-style-type: disc;
 }
 
-.list-\[circle\]{
-  list-style-type: circle;
+.auto-rows-min{
+  grid-auto-rows: min-content;
+}
+
+.grid-rows-\[min-content_auto_min-content\]{
+  grid-template-rows: min-content auto min-content;
 }
 
 .flex-row{
@@ -2312,6 +2248,10 @@ details.collapse summary::-webkit-details-marker{
   justify-content: center;
 }
 
+.justify-items-center{
+  justify-items: center;
+}
+
 .gap-0{
   gap: 0px;
 }
@@ -2324,6 +2264,10 @@ details.collapse summary::-webkit-details-marker{
   border-radius: 0.375rem;
 }
 
+.rounded-none{
+  border-radius: 0px;
+}
+
 .border{
   border-width: 1px;
 }
@@ -2332,9 +2276,8 @@ details.collapse summary::-webkit-details-marker{
   border-left-width: 2px;
 }
 
-.border-gray-200{
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+.border-b{
+  border-bottom-width: 1px;
 }
 
 .border-base-300{
@@ -2342,8 +2285,18 @@ details.collapse summary::-webkit-details-marker{
   border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
 }
 
+.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .border-opacity-60{
   --tw-border-opacity: 0.6;
+}
+
+.bg-accent{
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
 }
 
 .bg-base-100{
@@ -2361,16 +2314,6 @@ details.collapse summary::-webkit-details-marker{
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
 }
 
-.bg-base-200{
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
-}
-
-.bg-accent{
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
-}
-
 .p-4{
   padding: 1rem;
 }
@@ -2378,6 +2321,11 @@ details.collapse summary::-webkit-details-marker{
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-5{
@@ -2400,6 +2348,16 @@ details.collapse summary::-webkit-details-marker{
   padding-bottom: 1.5rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2416,16 +2374,32 @@ details.collapse summary::-webkit-details-marker{
   padding-top: 1.5rem;
 }
 
+.pl-8{
+  padding-left: 2rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
+}
+
+.pt-7{
+  padding-top: 1.75rem;
+}
+
+.pl-7{
+  padding-left: 1.75rem;
+}
+
 .text-left{
   text-align: left;
 }
 
 .text-center{
   text-align: center;
-}
-
-.indent-1{
-  text-indent: 0.25rem;
 }
 
 .font-mono{
@@ -2515,6 +2489,10 @@ details.collapse summary::-webkit-details-marker{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .shadow-md{
