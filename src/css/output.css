@@ -2510,12 +2510,12 @@ details.collapse summary::-webkit-details-marker{
 .hero-container {
   background-image: url(../img/trees_water_flipped.jpg),
     linear-gradient(
-      to right bottom,
-      oklch(57.28% 0.1452 245.65) 40%,
+      148deg,
+      oklch(57.28% 0.1452 245.65) 42%,
       oklch(91.56% 0.1258 179.08) 60%
     );
   background-blend-mode: multiply;
-  background-position: center;
+  background-position: bottom left 10%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2724,6 +2724,10 @@ details.collapse summary::-webkit-details-marker{
 @media (min-width: 768px){
   .md\:w-full{
     width: 100%;
+  }
+
+  .md\:bg-center{
+    background-position: center;
   }
 
   .md\:text-left{
