@@ -1901,6 +1901,10 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 4rem;
 }
 
+.mt-\[25\%\]{
+  margin-top: 25%;
+}
+
 .flex{
   display: flex;
 }
@@ -1941,6 +1945,14 @@ details.collapse summary::-webkit-details-marker{
   max-height: 6rem;
 }
 
+.max-h-40{
+  max-height: 10rem;
+}
+
+.max-h-full{
+  max-height: 100%;
+}
+
 .min-h-28{
   min-height: 7rem;
 }
@@ -1959,6 +1971,10 @@ details.collapse summary::-webkit-details-marker{
 
 .max-w-3xl{
   max-width: 48rem;
+}
+
+.max-w-full{
+  max-width: 100%;
 }
 
 .max-w-screen-md{
@@ -2037,6 +2053,10 @@ details.collapse summary::-webkit-details-marker{
   scroll-behavior: smooth;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .rounded-none{
   border-radius: 0px;
 }
@@ -2088,6 +2108,14 @@ details.collapse summary::-webkit-details-marker{
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
+.bg-auto{
+  background-size: auto;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -2095,6 +2123,11 @@ details.collapse summary::-webkit-details-marker{
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-4{
@@ -2260,12 +2293,24 @@ details.collapse summary::-webkit-details-marker{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.\[box-shadow\:-15px_-15px_0px_0px_\#2F77FF\]{
+  box-shadow: -15px -15px 0px 0px #2F77FF;
+}
+
 .\[grid-area\:content\]{
   grid-area: content;
 }
 
+.\[grid-area\:footer\]{
+  grid-area: footer;
+}
+
 .\[grid-area\:header\]{
   grid-area: header;
+}
+
+.\[grid-area\:images\]{
+  grid-area: images;
 }
 
 .\[grid-area\:timeline\]{
@@ -2281,7 +2326,7 @@ details.collapse summary::-webkit-details-marker{
   text-shadow: 0px 2px 4px black;
 }
 
-.hero-container {
+.hero-container-old {
   background-image: url(../img/trees_water_flipped.jpg),
     linear-gradient(
       148deg,

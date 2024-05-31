@@ -31,7 +31,7 @@
   text-shadow: 0px 2px 4px black;
 }
 
-.hero-container {
+.hero-container-old {
   background-image: url(../img/trees_water_flipped.jpg),
     linear-gradient(
       148deg,
