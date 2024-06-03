@@ -6,6 +6,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
@@ -54,7 +56,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Raleway, sans-serif, system-ui;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -549,8 +551,16 @@ html{
 }
 
 html {
-  font-family: "Barlow", serif, system-ui;
-  font-size: 1rem;
+  font-family: "Raleway", sans-serif, system-ui;
+}
+
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  font-family: "Bree Serif", serif, system-ui;
 }
 
 *, ::before, ::after{
@@ -2106,14 +2116,8 @@ details.collapse summary::-webkit-details-marker{
   margin-bottom: 1.25rem;
 }
 
-.my-10{
-  margin-top: 2.5rem;
+.mb-10{
   margin-bottom: 2.5rem;
-}
-
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-2{
@@ -2136,28 +2140,8 @@ details.collapse summary::-webkit-details-marker{
   margin-left: 1rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
-}
-
 .mt-16{
   margin-top: 4rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .flex{
@@ -2242,10 +2226,6 @@ details.collapse summary::-webkit-details-marker{
 
 .auto-rows-min{
   grid-auto-rows: min-content;
-}
-
-.grid-rows-\[min-content_auto\]{
-  grid-template-rows: min-content auto;
 }
 
 .grid-rows-\[min-content_auto_min-content\]{
@@ -2361,6 +2341,11 @@ details.collapse summary::-webkit-details-marker{
   padding-right: 2rem;
 }
 
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -2374,26 +2359,6 @@ details.collapse summary::-webkit-details-marker{
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pb-10{
@@ -2422,6 +2387,10 @@ details.collapse summary::-webkit-details-marker{
 
 .font-mono{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-serif{
+  font-family: "Bree Serif", serif, system-ui;
 }
 
 .text-2xl{
@@ -2464,11 +2433,6 @@ details.collapse summary::-webkit-details-marker{
   line-height: 1rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-black{
   font-weight: 900;
 }
@@ -2493,44 +2457,8 @@ details.collapse summary::-webkit-details-marker{
   line-height: 1.625;
 }
 
-.leading-normal{
-  line-height: 1.5;
-}
-
-.leading-loose{
-  line-height: 2;
-}
-
 .leading-tight{
   line-height: 1.25;
-}
-
-.leading-none{
-  line-height: 1;
-}
-
-.leading-\[1em\]{
-  line-height: 1em;
-}
-
-.leading-\[1rem\]{
-  line-height: 1rem;
-}
-
-.leading-\[1\]{
-  line-height: 1;
-}
-
-.leading-\[1\.2\]{
-  line-height: 1.2;
-}
-
-.leading-\[1\.25\]{
-  line-height: 1.25;
-}
-
-.leading-\[1\.1\]{
-  line-height: 1.1;
 }
 
 .text-base-content{

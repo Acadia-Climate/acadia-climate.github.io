@@ -4,6 +4,10 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateRows: {},
+      fontFamily: {
+        sans: ["Raleway", "sans-serif", "system-ui"],
+        serif: ['"Bree Serif"', "serif", "system-ui"],
+      },
     },
   },
   plugins: [require("daisyui")],
