@@ -1879,8 +1879,8 @@ details.collapse summary::-webkit-details-marker{
   z-index: 50;
 }
 
-.col-start-2{
-  grid-column-start: 2;
+.col-start-1{
+  grid-column-start: 1;
 }
 
 .row-span-full{
@@ -1955,6 +1955,10 @@ details.collapse summary::-webkit-details-marker{
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[90\%\]{
+  height: 90%;
 }
 
 .max-h-20{
@@ -2035,18 +2039,6 @@ details.collapse summary::-webkit-details-marker{
 
 .place-items-center{
   place-items: center;
-}
-
-.content-center{
-  align-content: center;
-}
-
-.content-stretch{
-  align-content: stretch;
-}
-
-.items-center{
-  align-items: center;
 }
 
 .items-stretch{
@@ -2374,10 +2366,12 @@ details.collapse summary::-webkit-details-marker{
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   row-gap: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: grid;
   width: 100%;
   grid-template-rows: repeat(6, auto);
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: min-content auto;
   place-items: center;
   > *:nth-child(2) {
     grid-row: 1;
@@ -2401,7 +2395,7 @@ details.collapse summary::-webkit-details-marker{
 
 .timeline-section {
   display: grid;
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 2;
   grid-template-columns: subgrid;
   grid-auto-flow: column;
   justify-items: center;
@@ -2412,12 +2406,7 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 1rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-style: italic;
-  grid-column: 1;
-  justify-self: end;
-}
-
-.timeline-section.alternate > .timeline-time {
-  grid-column: 3;
+  grid-column: 2;
   justify-self: start;
 }
 
@@ -2429,7 +2418,8 @@ details.collapse summary::-webkit-details-marker{
   --tw-bg-opacity: 1;
   background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
   padding: 1rem;
-  grid-column: 2;
+  grid-column: 1;
+  grid-row: 2;
   box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
@@ -2473,7 +2463,7 @@ details.collapse summary::-webkit-details-marker{
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
   --tw-ring-inset: inset;
   --tw-ring-color: var(--fallback-a,oklch(var(--a)/0.9));
-  grid-column: 3;
+  grid-column: 2;
   justify-self: start;
   &::before {
     content: "";
@@ -2498,24 +2488,56 @@ details.collapse summary::-webkit-details-marker{
   }
 }
 
-.timeline-section.alternate > .timeline-content {
-  grid-column: 1;
-  justify-self: end;
-  &::before {
-    top: 15px;
-    left: 100%;
-    right: 0;
-    border-right: none;
-    border-left: 10px solid var(--fallback-a, oklch(var(--a) / 0.9));
+@media (min-width: 768px) {
+  .timeline-container {
+    grid-template-columns: 1fr min-content 1fr;
   }
-  &.scroll-pre-animate {
-    opacity: 0;
-    transform: translateX(-100%);
+
+  .timeline-section {
+    grid-column: 1 / span 3;
   }
-  &.scroll-animate {
-    opacity: 1;
-    transform: translateX(0);
-    transition: all 1s ease-in-out;
+
+  .timeline-section > .timeline-time{
+    margin-top: 1rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-style: italic;
+    grid-column: 1;
+    justify-self: end;
+  }
+
+  .timeline-section.alternate > .timeline-time {
+    grid-column: 3;
+    justify-self: start;
+  }
+
+  .timeline-section > .timeline-icon {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .timeline-section > .timeline-content {
+    grid-column: 3;
+  }
+
+  .timeline-section.alternate > .timeline-content {
+    grid-column: 1;
+    justify-self: end;
+    &::before {
+      top: 15px;
+      left: 100%;
+      right: 0;
+      border-right: none;
+      border-left: 10px solid var(--fallback-a, oklch(var(--a) / 0.9));
+    }
+    &.scroll-pre-animate {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    &.scroll-animate {
+      opacity: 1;
+      transform: translateX(0);
+      transition: all 1s ease-in-out;
+    }
   }
 }
 
@@ -2564,6 +2586,14 @@ details.collapse summary::-webkit-details-marker{
 }
 
 @media (min-width: 768px){
+  .md\:col-start-2{
+    grid-column-start: 2;
+  }
+
+  .md\:h-\[85\%\]{
+    height: 85%;
+  }
+
   .md\:w-full{
     width: 100%;
   }
