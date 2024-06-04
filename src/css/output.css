@@ -2021,6 +2021,10 @@ details.collapse summary::-webkit-details-marker{
   flex-direction: row;
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -2033,8 +2037,20 @@ details.collapse summary::-webkit-details-marker{
   place-items: center;
 }
 
+.content-center{
+  align-content: center;
+}
+
+.content-stretch{
+  align-content: stretch;
+}
+
 .items-center{
   align-items: center;
+}
+
+.items-stretch{
+  align-items: stretch;
 }
 
 .justify-center{
@@ -2419,11 +2435,11 @@ details.collapse summary::-webkit-details-marker{
 }
 
 .timeline-icon {
-  &.timeline-pre-animate {
+  &.scroll-pre-animate {
     /* visibility: hidden; */
     opacity: 0;
   }
-  &.timeline-animate {
+  &.scroll-animate {
     animation: 1s icon-bounce;
     /* visibility: visible; */
   }
@@ -2471,11 +2487,11 @@ details.collapse summary::-webkit-details-marker{
     border-bottom: 10px solid transparent;
     border-right: 10px solid var(--fallback-a, oklch(var(--a) / 0.9));
   }
-  &.timeline-pre-animate {
+  &.scroll-pre-animate {
     opacity: 0;
     transform: translateX(100%);
   }
-  &.timeline-animate {
+  &.scroll-animate {
     opacity: 1;
     transform: translateX(0);
     transition: all 1s ease-in-out;
@@ -2492,19 +2508,41 @@ details.collapse summary::-webkit-details-marker{
     border-right: none;
     border-left: 10px solid var(--fallback-a, oklch(var(--a) / 0.9));
   }
-  &.timeline-pre-animate {
+  &.scroll-pre-animate {
     opacity: 0;
     transform: translateX(-100%);
   }
-  &.timeline-animate {
+  &.scroll-animate {
     opacity: 1;
     transform: translateX(0);
     transition: all 1s ease-in-out;
   }
 }
 
+.features-container {
+  > .scroll-pre-animate {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+  }
+  > .scroll-animate {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  > .scroll-animate:nth-child(2) {
+    transition-delay: 200ms;
+  }
+  > .scroll-animate:nth-child(3) {
+    transition-delay: 400ms;
+  }
+  > .scroll-animate:nth-child(4) {
+    transition-delay: 600ms;
+  }
+}
+
 @media (prefers-reduced-motion) {
-  .timeline-animate {
+  .scroll-animate {
     transition: none !important;
     animation: none !important;
   }
