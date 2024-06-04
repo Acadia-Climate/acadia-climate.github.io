@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/output.css" rel="stylesheet" />
+    <script defer src="js/scroll-observer.js"></script>
   </head>
   <body>
     <!-- NAVBAR: START-->
@@ -57,117 +58,148 @@
         <!-- LANDING SECTION: END -->
 
         <!-- PRODUCT SECTION: START -->
-        <section id="product" class="py-16 bg-primary text-primary-content">
-          <div class="product-container container mx-auto px-5">
-            <div class="flex [grid-area:header] place-content-center mb-5">
+        <!-- container mx-auto  -->
+        <section id="product" class="py-16 bg-secondary text-primary-content">
+          <div class="product-container gap-y-10">
+            <div class="flex [grid-area:header] place-content-center">
               <object
                 type="image/svg+xml"
-                data="img/liquid_c.svg"
+                data="img/liquid_c_2.svg"
                 class="max-h-24"
               ></object>
             </div>
             <!-- PROD DESC: START -->
-            <section class="[grid-area:content]">
-              <hgroup>
-                <h2 class="text-center md:text-left mb-5 text-2xl font-bold">
-                  Enter: Liquid Carbon
-                </h2>
-                <p class="mb-7 text-6xl font-serif font-bold">
-                  Carbon Credit Backed Loans
+            <section
+              class="[grid-area:content] flex justify-center px-4 text-secondary-content bg-secondary"
+            >
+              <div class="max-w-screen-md">
+                <hgroup class="mb-7 font-bold">
+                  <h2 class="mb-5 text-6xl">Carbon Credit Backed Loans</h2>
+                  <p class="text-2xl">Enter: Liquid Carbon</p>
+                </hgroup>
+                <p class="text-left mb-5 text-xl">
+                  You shouldn't have to wait months to unlock the value of your
+                  carbon credit portfolios. With Liquid Carbon, by Acadia, you
+                  don't have to. Apply for loans backed by the value of your
+                  carbon credits and receive financing within days instead of
+                  months.
                 </p>
-              </hgroup>
-              <p class="text-left mb-5 text-xl">
-                You shouldn't have to wait months to unlock the value of your
-                carbon credit portfolios. With Liquid Carbon, by Acadia, you
-                don't have to. Apply for loans backed by the value of your
-                carbon credits and receive financing within days instead of
-                months.
-              </p>
+              </div>
             </section>
             <!-- PROD DESC: END -->
 
             <!-- TIMELINE: START -->
-            <section id="product-timeline" class="[grid-area:timeline]">
-              <h3 class="text-center">Example timeline:</h3>
-              <ul
-                class="container timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
-              >
-                <li>
-                  <div
-                    class="timeline-start md:text-end font-mono italic"
-                    style="align-self: flex-start"
-                  >
-                    Start
+            <div
+              id="product-timeline"
+              class="[grid-area:timeline] py-10 bg-primary"
+            >
+              <div class="timeline-container">
+                <span
+                  class="self-start row-span-full col-start-2 h-[85%] w-2 bg-slate-700"
+                ></span>
+                <!-- TIMELINE SECTION: START -->
+                <div class="timeline-section">
+                  <span class="timeline-time">Start</span>
+                  <div class="timeline-icon timeline-pre-animate">
+                    <img src="img/timeline_issued.svg" />
                   </div>
-                  <div class="timeline-middle">
-                    <img src="img/check.svg" class="h-5 w-5" />
+                  <section class="timeline-content timeline-pre-animate">
+                    <h3 class="mb-4 text-2xl font-black">
+                      Your Carbon Credits Are Issued
+                    </h3>
+                    <p class="text-xl">
+                      We accept carbon credits issued from all the main
+                      registries
+                    </p>
+                  </section>
+                </div>
+                <!-- TIMELINE SECTION: END -->
+                <!-- TIMELINE SECTION: START -->
+                <div class="timeline-section alternate">
+                  <span class="timeline-time">Eligible immediately</span>
+                  <div class="timeline-icon timeline-pre-animate">
+                    <img src="img/timeline_apply.svg" />
                   </div>
-                  <div class="timeline-end md:text-start">
-                    <div class="text-lg font-black">
-                      Your carbon credits are issued
-                    </div>
-                    We accept carbon credits issued from all the main registries
+                  <section class="timeline-content timeline-pre-animate">
+                    <h3 class="mb-4 text-2xl font-black">Apply For A Loan</h3>
+                    <p class="text-xl">
+                      Our digital application process is designed to be as
+                      simple and painless as possible. Apply in minutes through
+                      our web portal
+                    </p>
+                  </section>
+                </div>
+                <!-- TIMELINE SECTION: END -->
+                <!-- TIMELINE SECTION: START -->
+                <div class="timeline-section">
+                  <span class="timeline-time"> Within 2 days </span>
+                  <div class="timeline-icon timeline-pre-animate">
+                    <img src="img/timeline_decision.svg" />
                   </div>
-                  <hr />
-                </li>
-                <li>
-                  <hr />
-                  <div
-                    class="timeline-start md:text-end font-mono italic"
-                    style="align-self: flex-start"
-                  >
-                    Immediately
+                  <section class="timeline-content timeline-pre-animate">
+                    <h3 class="mb-4 text-2xl font-black">
+                      Receive Credit Decision
+                    </h3>
+                    <p class="text-xl">
+                      No more waiting, no more hassle. Get approved for a loan
+                      quickly and unlock value of your carbon credits
+                    </p>
+                  </section>
+                </div>
+                <!-- TIMELINE SECTION: END -->
+                <!-- TIMELINE SECTION: START -->
+                <div class="timeline-section alternate">
+                  <span class="timeline-time"></span>
+                  <div class="timeline-icon timeline-pre-animate">
+                    <img src="img/timeline_terms.svg" />
                   </div>
-                  <div class="timeline-middle">
-                    <img src="img/check.svg" class="h-5 w-5" />
+                  <section class="timeline-content timeline-pre-animate">
+                    <h3 class="mb-4 text-2xl font-black">Review Term Sheet</h3>
+                    <p class="text-xl">
+                      Our loans are designed to be as simple and
+                      developer-friendly as possible. Carbon credits will be
+                      held as collateral in an Acadia registry account and will
+                      return to you on loan repayment
+                    </p>
+                  </section>
+                </div>
+                <!-- TIMELINE SECTION: END -->
+                <!-- TIMELINE SECTION: START -->
+                <div class="timeline-section">
+                  <span class="timeline-time"> Within 5 days </span>
+                  <div class="timeline-icon timeline-pre-animate">
+                    <img src="img/timeline_funds.svg" />
                   </div>
-                  <div class="timeline-end md:text-start">
-                    <div class="text-lg font-black">Apply for a loan</div>
-                    Our digital application process is designed to be as simple
-                    and painless as possible. Apply in minutes through our web
-                    portal
+                  <section class="timeline-content timeline-pre-animate">
+                    <h3 class="mb-4 text-2xl font-black">Receive Funds</h3>
+                    <p class="text-xl">
+                      And just like that, your credits have gone from a line in
+                      your inventory to immediate capital that can be reinvested
+                      into your business
+                    </p>
+                  </section>
+                </div>
+                <!-- TIMELINE SECTION: END -->
+                <!-- TIMELINE SECTION: START -->
+                <div class="timeline-section alternate">
+                  <span class="timeline-time"> Months later </span>
+                  <div class="timeline-icon timeline-pre-animate">
+                    <img src="img/timeline_repay.svg" />
                   </div>
-                  <hr />
-                </li>
-                <li>
-                  <hr />
-                  <div
-                    class="timeline-start md:text-end font-mono italic"
-                    style="align-self: flex-start"
-                  >
-                    Within 2 days
-                  </div>
-                  <div class="timeline-middle">
-                    <img src="img/check.svg" class="h-5 w-5" />
-                  </div>
-                  <div class="timeline-end md:text-start">
-                    <div class="text-lg font-black">Receive loan terms</div>
-                    No more waiting, no more hassle. Get approved for a loan
-                    quickly and unlock value of your carbon credits
-                  </div>
-                  <hr />
-                </li>
-                <li>
-                  <hr />
-                  <div
-                    class="timeline-start md:text-end font-mono italic"
-                    style="align-self: flex-start"
-                  >
-                    Months later
-                  </div>
-                  <div class="timeline-middle">
-                    <img src="img/check.svg" class="h-5 w-5" />
-                  </div>
-                  <div class="timeline-end md:text-start">
-                    <div class="text-lg font-black">
-                      Your carbon credits finally sell
-                    </div>
-                    Just because buyers move slow doesn't mean your financing
-                    should have to
-                  </div>
-                </li>
-              </ul>
-            </section>
+                  <section class="timeline-content timeline-pre-animate">
+                    <h3 class="mb-4 text-2xl font-black">Loan Repaid</h3>
+                    <p class="text-xl">
+                      Once your credits sell, you can repay the loan with the
+                      peace of mind that you didn't have to wait months to
+                      unlock the capital needed for your business. Just because
+                      buyers move slow doesn't mean your financing should have
+                      to
+                    </p>
+                  </section>
+                </div>
+                <!-- TIMELINE SECTION: END -->
+              </div>
+            </div>
             <!-- TIMELINE: END -->
           </div>
         </section>
