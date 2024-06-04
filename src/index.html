@@ -8,10 +8,8 @@
   </head>
   <body>
     <!-- NAVBAR: START-->
-    <header>
-      <nav
-        class="navbar sticky w-full top-0 z-50 bg-primary text-primary-content shadow-md"
-      >
+    <header class="fixed top-0 w-full bg-base-100 z-40">
+      <nav class="navbar text-base-content shadow-md">
         <div class="flex-1">
           <a class="btn btn-ghost text-xl" href="./">
             <img src="img/acadia.svg" class="h-10" />
@@ -42,18 +40,21 @@
         <!-- LANDING SECTION: START -->
         <div
           id="landing"
-          class="grid hero-container md:bg-center h-screen place-items-start"
+          class="landing-container relative text-primary-content"
         >
-          <div class="pl-10 pt-10 rounded-md page-text text-left text-white">
-            <h1 class="mb-5 text-6xl font-bold">Carbon Finance Made Simple</h1>
-            <p class="max-w-xl pt-6 mb-5 text-2xl">
-              We provide fast and competitive financing to carbon removal
-              project developers so that they can focus less on liquidity
-              management and more on making the planet a better place for all of
-              us
-            </p>
-            <a class="btn btn-primary" href="#product"> Learn more </a>
-          </div>
+          <h1 class="max-w-3xl text-7xl leading-tight font-normal">
+            Carbon Finance Made Simple
+          </h1>
+          <p class="max-w-2xl text-xl leading-relaxed">
+            We provide fast, competitive financing to carbon removal project
+            developers so that they can focus less on liquidity management and
+            more on making the planet a better place for all of us
+          </p>
+          <a class="btn btn-primary z-10" href="#product"> Learn more </a>
+          <div
+            class="absolute bottom-0 h-[120%] w-full bg-origin-border bg-contain bg-left-bottom bg-no-repeat"
+            style="background-image: url(img/forest_vector_front.svg)"
+          ></div>
         </div>
         <!-- LANDING SECTION: END -->
 
@@ -100,10 +101,10 @@
                 <!-- TIMELINE SECTION: START -->
                 <div class="timeline-section">
                   <span class="timeline-time">Start</span>
-                  <div class="timeline-icon timeline-pre-animate">
+                  <div class="timeline-icon scroll-pre-animate">
                     <img src="img/timeline_issued.svg" />
                   </div>
-                  <section class="timeline-content timeline-pre-animate">
+                  <section class="timeline-content scroll-pre-animate">
                     <h3 class="mb-4 text-2xl font-black">
                       Your Carbon Credits Are Issued
                     </h3>
@@ -117,10 +118,10 @@
                 <!-- TIMELINE SECTION: START -->
                 <div class="timeline-section alternate">
                   <span class="timeline-time">Eligible immediately</span>
-                  <div class="timeline-icon timeline-pre-animate">
+                  <div class="timeline-icon scroll-pre-animate">
                     <img src="img/timeline_apply.svg" />
                   </div>
-                  <section class="timeline-content timeline-pre-animate">
+                  <section class="timeline-content scroll-pre-animate">
                     <h3 class="mb-4 text-2xl font-black">Apply For A Loan</h3>
                     <p class="text-xl">
                       Our digital application process is designed to be as
@@ -133,10 +134,10 @@
                 <!-- TIMELINE SECTION: START -->
                 <div class="timeline-section">
                   <span class="timeline-time"> Within 2 days </span>
-                  <div class="timeline-icon timeline-pre-animate">
+                  <div class="timeline-icon scroll-pre-animate">
                     <img src="img/timeline_decision.svg" />
                   </div>
-                  <section class="timeline-content timeline-pre-animate">
+                  <section class="timeline-content scroll-pre-animate">
                     <h3 class="mb-4 text-2xl font-black">
                       Receive Credit Decision
                     </h3>
@@ -150,10 +151,10 @@
                 <!-- TIMELINE SECTION: START -->
                 <div class="timeline-section alternate">
                   <span class="timeline-time"></span>
-                  <div class="timeline-icon timeline-pre-animate">
+                  <div class="timeline-icon scroll-pre-animate">
                     <img src="img/timeline_terms.svg" />
                   </div>
-                  <section class="timeline-content timeline-pre-animate">
+                  <section class="timeline-content scroll-pre-animate">
                     <h3 class="mb-4 text-2xl font-black">Review Term Sheet</h3>
                     <p class="text-xl">
                       Our loans are designed to be as simple and
@@ -167,10 +168,10 @@
                 <!-- TIMELINE SECTION: START -->
                 <div class="timeline-section">
                   <span class="timeline-time"> Within 5 days </span>
-                  <div class="timeline-icon timeline-pre-animate">
+                  <div class="timeline-icon scroll-pre-animate">
                     <img src="img/timeline_funds.svg" />
                   </div>
-                  <section class="timeline-content timeline-pre-animate">
+                  <section class="timeline-content scroll-pre-animate">
                     <h3 class="mb-4 text-2xl font-black">Receive Funds</h3>
                     <p class="text-xl">
                       And just like that, your credits have gone from a line in
@@ -183,10 +184,10 @@
                 <!-- TIMELINE SECTION: START -->
                 <div class="timeline-section alternate">
                   <span class="timeline-time"> Months later </span>
-                  <div class="timeline-icon timeline-pre-animate">
+                  <div class="timeline-icon scroll-pre-animate">
                     <img src="img/timeline_repay.svg" />
                   </div>
-                  <section class="timeline-content timeline-pre-animate">
+                  <section class="timeline-content scroll-pre-animate">
                     <h3 class="mb-4 text-2xl font-black">Loan Repaid</h3>
                     <p class="text-xl">
                       Once your credits sell, you can repay the loan with the
@@ -213,9 +214,11 @@
           <h2 class="mb-7 text-4xl font-bold text-center pb-10">
             Unlock Financing Options That Work For You
           </h2>
-          <div class="container mx-auto flex flex-wrap items-center px-5">
+          <div
+            class="features-container container mx-auto flex flex-wrap items-stretch px-5"
+          >
             <section
-              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+              class="flex flex-col justify-center scroll-pre-animate xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
             >
               <h3
                 class="text-lg sm:text-xl text-white font-medium title-font mb-2"
@@ -229,7 +232,7 @@
               </p>
             </section>
             <section
-              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+              class="flex flex-col justify-center scroll-pre-animate xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
             >
               <h3
                 class="text-lg sm:text-xl text-white font-medium title-font mb-2"
@@ -242,7 +245,7 @@
               </p>
             </section>
             <section
-              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+              class="flex flex-col justify-center scroll-pre-animate xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
             >
               <h3
                 class="text-lg sm:text-xl text-white font-medium title-font mb-2"
@@ -256,7 +259,7 @@
               </p>
             </section>
             <section
-              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+              class="flex flex-col justify-center scroll-pre-animate xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
             >
               <h3
                 class="text-lg sm:text-xl text-white font-medium title-font mb-2"
