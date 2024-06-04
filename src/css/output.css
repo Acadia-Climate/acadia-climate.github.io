@@ -1843,8 +1843,20 @@ details.collapse summary::-webkit-details-marker{
   visibility: collapse;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
 .sticky{
   position: sticky;
+}
+
+.bottom-0{
+  bottom: 0px;
 }
 
 .top-0{
@@ -1915,6 +1927,10 @@ details.collapse summary::-webkit-details-marker{
 
 .h-8{
   height: 2rem;
+}
+
+.h-\[120\%\]{
+  height: 120%;
 }
 
 .h-\[85\%\]{
@@ -2013,10 +2029,6 @@ details.collapse summary::-webkit-details-marker{
   justify-content: center;
 }
 
-.justify-items-center{
-  justify-items: center;
-}
-
 .gap-0{
   gap: 0px;
 }
@@ -2027,10 +2039,6 @@ details.collapse summary::-webkit-details-marker{
 
 .gap-y-10{
   row-gap: 2.5rem;
-}
-
-.gap-y-8{
-  row-gap: 2rem;
 }
 
 .self-start{
@@ -2072,6 +2080,11 @@ details.collapse summary::-webkit-details-marker{
   --tw-border-opacity: 0.6;
 }
 
+.bg-accent{
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
+}
+
 .bg-base-100{
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
@@ -2092,20 +2105,20 @@ details.collapse summary::-webkit-details-marker{
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
-.bg-cover{
-  background-size: cover;
+.bg-contain{
+  background-size: contain;
 }
 
-.bg-fixed{
-  background-attachment: fixed;
-}
-
-.bg-center{
-  background-position: center;
+.bg-left-bottom{
+  background-position: left bottom;
 }
 
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+
+.bg-origin-border{
+  background-origin: border-box;
 }
 
 .p-4{
@@ -2290,12 +2303,16 @@ details.collapse summary::-webkit-details-marker{
 }
 
 .landing-container {
+  height: 100vh;
   display: grid;
-  grid-template-rows: auto min-content;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "content content"
-    "footer footer";
+  grid-template-rows: repeat(3, min-content) auto;
+  grid-template-columns: auto;
+  justify-items: center;
+  padding-top: 2.5rem;
+  row-gap: 2rem;
+  text-align: center;
+  background: url(../img/forest_vector_back.svg) center/cover no-repeat fixed
+    var(--fallback-p,oklch(var(--p)/1));
 }
 
 .leaf-pattern {

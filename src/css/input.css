@@ -23,12 +23,16 @@
 }
 
 .landing-container {
+  height: 100vh;
   display: grid;
-  grid-template-rows: auto min-content;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "content content"
-    "footer footer";
+  grid-template-rows: repeat(3, min-content) auto;
+  grid-template-columns: auto;
+  justify-items: center;
+  padding-top: 2.5rem;
+  row-gap: 2rem;
+  text-align: center;
+  background: url(../img/forest_vector_back.svg) center/cover no-repeat fixed
+    theme(colors.primary);
 }
 
 .leaf-pattern {
